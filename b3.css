@@ -1,0 +1,91 @@
+body{
+    font-family: 'Nunito', sans-serif;
+    padding:0px;
+    margin:0px;
+}
+.effect-1
+{
+    background-image: url('/circle.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    width: 100%;
+    height: 75vh;
+    object-fit:fill;
+    opacity: 0.95;
+    margin:auto;
+}
+.sub-effect-1
+{
+    color:whitesmoke;
+    text-align: center;
+}
+.sub-effect-2
+{
+    font-size:x-large;
+    color:rgba(14, 3, 3, 0.733);  
+    text-align: center;
+}
+h1
+{
+    font-size:xx-large;
+    color: pink;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 15px;
+}
+.line-1
+{
+    text-align: center;
+    border-bottom: 2px solid red;
+    width: 13%;
+    margin :0px 559px 10px ;
+}
+.line-2
+{
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 0, 0, 0.5);
+    width: 13%;
+    margin :0px 559px 10px ;
+}
+p{
+    text-align: center;
+    color:rgba(14, 3, 3, 0.733);
+ }
+button{
+    background-color:rgba(238, 57, 57, 0.829);
+    display: inline-block;
+    text-decoration: none;
+    border: 3px solid  rgba(238, 57, 57, 0.829);
+    border-radius: 25px;
+    margin: 55px 610px 70px;
+    color: white;
+    font-size: 20px;
+ }
+ img{
+    margin: 30px 615px 1px;
+ }
+ .effect-2
+ {
+    width: 1100px;
+    padding-left: 100px;
+    display: flex;
+ }
+ .sub-effect-3{
+    color:rgba(243, 72, 72, 0.911);
+ }
+ span{
+    text-align:center;
+    color:rgba(14, 3, 3, 0.733);
+    font-weight: lighter;
+    display: flex;
+ }
+ p{
+    text-align: center;
+    color:rgba(14, 3, 3, 0.733);
+}
+div
+{
+    margin:0px 33px 33px 33px;
+}
