@@ -3,21 +3,39 @@ body{
     font-size: 15px;
     position: relative;
     color: #252424;
-    opacity: 0.9;
+    
+}
+h1{
+    font-size: 65px;
+    margin-bottom: 0.5em;
 }
 .bar{
-    background-color: #fff;
+    top: 0px;
+    background-color: white;
+    color: rgb(43, 39, 39);
     position: fixed;
-    left: 100px;
+    left: 0%;
     border-bottom-style: solid;
     border-width: 1px;
     font-size: 20px;
-    right: 40%;
-    opacity: 0.5;
+    right: 0%;
+    letter-spacing: 2px;
+    line-height: 3;
+    display: inline-block;
+    z-index: 1;
+}
+.gray
+{
+    color:gray;
+    opacity: 0.8;
+    position: absolute;
+    margin: 0px auto;
 }
 
 .space{
-    margin:22px;
+    margin:0 auto;
+    letter-spacing: 2px;
+    line-height: 3.5;
 }
 .container {
     padding-right: 15px;
@@ -27,6 +45,7 @@ body{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-column-gap: 70px;
+    position: relative;
 }
 .container div{
     border:none;
@@ -37,6 +56,7 @@ body{
     background-color: rgb(99, 219, 219);
     color: white;
     border-radius: 50px 50px 50px 0px;
+    font-size: 23px;
     padding: 10px 30px;
 }
 
@@ -52,12 +72,33 @@ body{
 .box-2{
     position:relative;
     margin-left: 10px;
+    position: relative;
+    
 }
 .round{
     border-radius: 50%;
+    position: relative;
+    top: 27px;
+    left: 26px;
 }
-.gray
-{
-    color:gray;
-    opacity: 0.8;
+
+.inner-circle{
+    position: absolute;
+    border-radius:50%;
+    width:350px;
+    height: 350px;
+    background-color: lightgrey;
+    top: 26px;
+    left: 25px;
+    opacity: 0.9;
+}
+.outter-circle{
+    position: absolute;
+    border-radius:50%;
+    width: 380px;
+    height: 380px;
+    background-color:grey;
+    z-index: -1;
+    top: 10px;
+    opacity: 0.6;
 }
