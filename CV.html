@@ -6,27 +6,32 @@
     <meta name="viewport" content="width = device - width, initial-scale = 1.0">
     <title>Curriculumn Vitae</title>
     <link rel="stylesheet" href="./CV.css">
+</head>
 <body>
-
-    <div class="bar">
-        <span>Home</span> <span class>About</span>
-    </div>
-    <div>
-        <br /> <br /> <br /> <br /> <br />  <br /> <br /> <br /> <br /> 
-        <br /> <br /> <br /> <br /> 
-        
-    </div>
-    <div class="container">
+    <header>
+        <h2 class="logo">Logo</h2>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
+    
+    <section class="container">
         <div class = "box-1">
             <span class="button">Hello I'm</span>
-            
-            <h1 class>
+            <h1>
                 Tuấn Hùng 
             </h1>
             <h2 class = "gray"> Web Developer </h2>
             <h2 class = "space">Email: tuannguyen.300501@gmail.com <br />
                  +83 703 159 526 <br /> 457 Lê Duẩn, Đà Nẵng, Việt Nam</h2>
-            
         </div>
 
 
@@ -35,15 +40,53 @@
             <div class="inner-circle"></div>
             <img class="round" src="./CV.png" width="350px" height="350px;">
         </div>
-       
-    </div>
-
-    <div>
-        <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /><br /> <br /> <br /> <br /><br /> <br /> <br /> <br /><br /> <br /> <br /> <br />
-        <br /> <br /> <br /> <br /><br /> <br /> <br /> <br /><br /> <br /> <br /> <br /><br /> <br /> <br /> <br /><br /> <br /> <br /> <br /><br /> <br /> <br /> <br />
-        <br /> <br /> <br /> <br /><br /> <br /> <br /> <br /><br /> <br /> <br /> <br /><br /> <br /> <br /> <br /><br /> <br /> <br /> <br /><br /> <br /> <br /> <br />
-    </div>
     
+    </section>
+    
+    <section class = "container">
+        <div class="box-3">
+            <img src="./section2.png" width="550px" height="350px;">
+        </div>
+        <div class="box-4">
+            <h2 class="sec2-box4-h2">
+                About me
+            </h2>
+            <p class="sec2-box4-p">
+                Xin chào, mình là Hùng, một lập trình viên chuyên về web sống ở Luân Đôn.
+                Mình có rất nhiều kinh nghiệm lập trình, thiết kế và xây dựng web. Ngoài ra mình còn biết: 
+            </p>
+            <ul class="sec2-box4-ul">
+                <li class="sec2-box4-li">
+                    <span class="sec2-box4-ul-li-span">C</span>
+                </li>
+                <li class="sec2-box4-li">
+                    <span class="sec2-box4-ul-li-span">C++</span>
+                </li>
+                <li class="sec2-box4-li">
+                    <span class="sec2-box4-ul-li-span">java</span>
+                </li>
+                <li class="sec2-box4-li">
+                    <span class="sec2-box4-ul-li-span">php</span>
+                </li>
+                <li class="sec2-box4-li">
+                    <span class="sec2-box4-ul-li-span">html</span>
+                </li>
+                <li class="sec2-box4-li">
+                    <span class="sec2-box4-ul-li-span">php</span>
+                </li>
+                <li class="sec2-box4-li">
+                    <span class="sec2-box4-ul-li-span">gg</span>
+                </li>
+                <li class="sec2-box4-li">
+                    <span class="sec2-box4-ul-li-span">Nodejs</span>
+                </li>
+                <li class="sec2-box4-li">
+                    <span class="sec2-box4-ul-li-span">javascript</span>
+                </li>
+            </ul>
+            <button class="sec2-box4-button">Download CV</button>
+        </div>
+    </section>
+
 </body>
-</head>
 </html>
