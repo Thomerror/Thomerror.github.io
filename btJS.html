@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="width=device-width, initial-scale=1;">
+    <title>JavaScript Home Work</title>
+    <meta name="description" content="Hover Effect ideas: Inspiration for subtle over effect">    <meta name="keywords" content="Hover effect, inspiration, grid, thumbnail,
+    transition, subtle, web design">
+    
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+    <div>
+        <form id = "f1">
+            <h2>BT1</h2>
+            <p id="bt1">Ngày và giờ sẽ hiện ở đây</p>
+            <button type="button" onclick="displayDate()">Dipsplay Date</button>
+        </form>
+        
+    </div>
+    <div class="style">
+        <form id="f2">
+            <h2>BT2</h2>
+            Chọn định dạng ngày tháng năm muốn hiển thị:
+            <select id="format" onchange="formatChange()">
+                <option value="mm-dd-yy">mm-dd-yy</option>
+                <option value="mm/dd/yy">mm/dd/yy</option>
+                <option value="dd-mm-yy">dd-mm-yy</option>
+                <option value="dd/mm/yy">dd/mm/yy</option>
+              </select>
+            <p id="bt2">Show here</p>
+        </form>
+    </div>
+    <div>
+        <form id="f3">
+            <h2>BT3</h2>
+            <p>Kiểm tra xem một số nguyên đã cho có chuỗi chữ số tăng hay không</p>
+            <input type="text" id="f3Input" value="">
+            <button type="button" value="submit" onclick="chuoi_tang()">Get result</button>
+            <p id="bt3">result here</p>
+        </form>
+    </div>
+    <div>
+        <form id="f4">
+            <h2>BT4</h2>
+            <p>thay thế mọi ký tự trong một chuỗi đã
+                cho với ký tự theo sau nó trong bảng chữ cái.</p>
+            <input type="text" id="f4Input" value="">
+            <button type="button" value="submit" onclick="replaceChar()">Replace</button>
+            <p id="bt4">
+            Replace character here
+            </p>
+            
+        </form>
+    </div>
+    <div>
+        <form id="f5">
+            <h2>BT5</h2>
+            <p>tạo chuỗi bằng cách sử dụng ba ký tự ở
+                giữa của một chuỗi có độ dài lẻ</p>
+            <input type="text" id="f5Input" value="">
+            <button type="button" value="submit" onclick="getSubStr()">get middle string</button>
+            <p id="bt5">
+                Result here
+            </p>
+        </form>
+    </div>
+    <div>
+        <form>
+        <h2>BT6</h2>
+        <p>hiển thị số xuất hiện nhiều lần nhất trong mảng</p>
+        <input type="text" id="f6Input" value="">
+        <button type="button" value="submit" onclick="mostFrequency()">get Result</button>
+        <p id="bt6">
+            Result here
+        </p>
+        </form>
+    </div>
+    <div>
+        <form>
+            <h2>BT7</h2>
+            <p> Viết chương trình để kiểm tra xem chuỗi chứa &#39;java&#39; hay không</p>
+            <p>Nhập chuỗi</p><input type="text" id="f7Input1" value="">
+            <p>Nhập chuỗi cần tìm</p><input type="text" id="f7Input2" value="">
+            <button type="button" value="submit" onclick ="checkSubstring()">get Result</button>
+            <p id="bt7">
+                Result here
+            </p>
+        </form>
+    </div>
+    <div>
+        <form>
+            <h2>BT8</h2>
+            <p>lấy tên tháng từ một số cụ thể</p>
+            <input type="text" id="f8Input" value="">
+            <button type="button" value="submit" onclick="getMonth()">get Month</button>
+            <p id="bt8">
+                Result here
+            </p>
+        </form>
+    </div>
+    <div>
+        <form>
+            <h2>BT9</h2>
+            <p>nhập một chuỗi và tìm từ dài nhất trong chuỗi</p>
+            <input type="text" id="f9Input" value="">
+            <button type="button" value="submit" onclick="findLongesWord()">get Result</button>
+            <p id="bt9">
+                Result here
+            </p>
+        </form>
+    </div>
+    <div>
+        <h2>BT10</h2>
+        <p>nhập 2 số và in ra giá trị là số nguyên
+            tố giữa 2 số đó</p>
+        <p>Nhập số thứ nhất</p>
+        <input type="text" id="f10Input1" value="">
+        <p>Nhập số thứ hai</p>
+        <input type="text" id="f10Input2" value="">
+        <button type="button" value="submit" onclick="printNT()">get Result</button>
+        <p id="bt10">
+            Result here:   
+        </p>
+    </div>
+    <script>
+        //BT1
+        function displayDate(){
+            document.getElementById("bt1").innerHTML = Date();
+        }
+        
+        //BT2
+        let today = new Date();
+        let dateForm1 = today.getDay()+"/"+today.getMonth()+"/"+today.getUTCFullYear();
+        let dateForm1Dash = today.getUTCDay()+"-"+today.getUTCMonth()+"-"+today.getUTCFullYear();
+        let dateForm2 = today.getUTCMonth()+"/"+today.getUTCDay()+"/"+today.getUTCFullYear();
+        let dateForm2Dash = today.getUTCMonth()+"-"+today.getUTCDay()+"-"+today.getUTCFullYear();
+        document.getElementById("bt2").innerHTML = dateForm2Dash;
+        function formatChange(){
+            format = document.forms[1].format.value;
+            if(format == "mm-dd-yy"){
+                document.getElementById("bt2").innerHTML = dateForm2Dash;
+            }
+            if(format == "mm/dd/yy"){
+                document.getElementById("bt2").innerHTML = dateForm2;
+            }
+            if(format == "dd-mm-yy"){
+                document.getElementById("bt2").innerHTML = dateForm1Dash;
+            }
+            if(format == "dd/mm/yy"){
+                document.getElementById("bt2").innerHTML = dateForm1;
+            }
+        }
+
+        //BT3
+       
+        
+        function chuoi_tang(){
+            let isIncrement = true;
+            let num = document.getElementById("f3Input").value;
+            let arr_num = ('' + num).split('');
+            for (let i = 0; i < arr_num.length - 1; i++) {
+                if (parseInt(arr_num[i]) >= parseInt(arr_num[i + 1])){
+                    isIncrement = false;
+                    document.getElementById("bt3").innerHTML = "false";
+                }               
+            }
+            if(isIncrement == true){
+                document.getElementById("bt3").innerHTML = "true";
+            }
+        }
+
+        
+        //BT4
+        function replaceChar(){
+            let originStr = document.getElementById("f4Input").value;
+            let newStr = "";
+            for(let i = 0; i < originStr.length; ++i){
+            newStr += String.fromCharCode(originStr.charCodeAt(i) + 1);
+            }
+            document.getElementById('bt4').innerHTML = newStr;
+        }
+        
+        //BT5
+        function getSubStr(){
+        let txt = document.getElementById("f5Input").value;
+        let t = txt.substring((txt.length/2)-1,(txt.length/2)+2);
+        document.getElementById("bt5").innerHTML = t;
+        }
+        
+
+        //BT6
+        function mostFrequency(){
+            let arr1 = new Array(30);
+            arr1 = document.getElementById("f6Input").value;
+            let mf = 1;
+            let m = 0;
+            let item;
+            for (var i=0; i<arr1.length; i++)
+            {
+            for (var j=i; j<arr1.length; j++)
+                    {
+                    if (arr1[i] == arr1[j])
+                            m++;
+                            if (mf<m)
+                            {
+                            mf=m; 
+                            item = arr1[i];
+                            }
+                    }
+                    m=0;
+            }
+            document.getElementById("bt6").innerHTML = item+" ( " +mf +" times ) " ;
+        }
+        
+        
+
+        //BT7
+        
+        function checkSubstring(){
+            let myString = document.getElementById("f7Input1").value;
+            let stringToCheck = document.getElementById("f7Input2").value;
+            if(myString.indexOf(stringToCheck) > -1){
+                document.getElementById("bt7").innerHTML = stringToCheck + " found!!!";
+            }
+            else{
+                document.getElementById("bt7").innerHTML = "Not found lmao!!!"
+            }
+        }
+        
+        //BT8
+        function getMonth(){
+        let numMonth = parseInt(document.getElementById("f8Input").value);
+        let month = 0;
+        switch(numMonth){
+            case 1:{
+                month = "January";
+                break;
+            }
+            case 2:{
+                month = "February";
+                break;
+            }
+            case 3:{
+                month = "March";
+                break;
+            }
+            case 4:{
+                month = "April";
+                break;
+            }
+            case 5:{
+                month = "May";
+                break;
+            }
+            case 6:{
+                month = "June";
+                break;
+            }
+            case 7:{
+                month = "July";
+                break;
+            }
+            case 8:{
+                month = "August";
+                break;
+            }
+            case 9:{
+                month = "September";
+                break;
+            }
+            case 10:{
+                month = "October";
+                break;
+            }
+            case 11:{
+                month = "November";
+                break;
+            }
+            case 12:{
+                month = "December";
+                break;
+            }
+            default:{
+                month = "Invalid input";
+                break;
+            }
+        }
+        document.getElementById("bt8").innerHTML = month;
+
+        }
+
+        //BT9
+        
+        function findLongesWord(){
+            let Str = document.getElementById("f9Input").value;
+            let Str2 = '';
+            let maxLength = 0;
+            let StrSplit = Str.split(' ');
+            for(let i = 0; i < StrSplit.length; ++i){
+                if(StrSplit[i].length > maxLength){
+                    maxLength = StrSplit[i].length;
+                    Str2 = StrSplit[i];
+                }
+            }
+            document.getElementById("bt9").innerHTML = Str2;
+        }
+
+        //BT10
+
+        function checkNT(numa){
+            let isNT = true;
+            for(let i = 2; i <= (numa)/2; ++i){
+                if(numa % i == 0){ 
+                    isNT = false;
+                    break;
+                }
+            }
+            if(isNT == true){
+                document.getElementById("bt10").innerHTML += numa + " ";
+            }
+        }
+        function printNT(){
+            let num1 = parseInt(document.getElementById("f10Input1").value);
+            let num2 = parseInt(document.getElementById("f10Input2").value);
+            if(num1 > num2){
+                let temp = num1;
+                num1 = num2;
+                num2 = temp;
+            }
+            for(let i = num1; i <= num2; ++i){
+                checkNT(i);
+            }
+        }
+        
+    </script>
+</body>
+</html>
+
+<!--
+Bài 1 : Viết chương trình Javascript để hiện thị ngày giờ
+Bài 2 : Viết chương trình để in ra ngày tháng năm theo các định dạng mm-dd-
+yyyy, mm/dd/yyyy, dd-mm-yyyy, dd/mm/yyyy
+Bài 3 : Viết chương trình JavaScript để kiểm tra xem một số nguyên đã cho có
+chuỗi chữ số tăng hay không
+Bài 4 : Viết một chương trình JavaScript để thay thế mọi ký tự trong một chuỗi đã
+cho với ký tự theo sau nó trong bảng chữ cái.
+Bài 5 : Viết chương trình JavaScript để tạo chuỗi bằng cách sử dụng ba ký tự ở
+giữa của một chuỗi có độ dài lẻ. Độ dài chuỗi phải lớn hơn hoặc bằng ba.
+Bài 6 : Viết chương trình hiển thị số xuất hiện nhiều lần nhất trong mảng
+Bài 7 : Viết chương trình để kiểm tra xem chuỗi chứa &#39;java&#39; hay không
+Bài 8 : Viết một hàm để lấy tên tháng từ một số cụ thể ( ví dụ : 1 – Tháng một )
+Bài 9: Viết một hàm JavaScript nhập một chuỗi và tìm từ dài nhất trong chuỗi
+Bài 10 : Viết chương trình tạo form HTML nhập 2 số và in ra giá trị là số nguyên
+tố giữa 2 số đó
+-->
