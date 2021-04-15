@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="width=device-width, initial-scale=1;">
+    <title>Local storage</title>
+    <link rel="stylesheet" href="btAHoang.css">
+</head>
+<body>
+
+   
+    <div class="container">
+        <div>
+            <h1>BT JS cơ bản!</h1>
+            <form class="f" name="myForm" >
+                <div class="grid">
+                    <div class="item1"><label>item name</label></div>
+                    <div class="item2"><label>Category</label></div>
+                    <div class="item3">
+                        <input  type="file" id="chooseFile" accept="image/png, img/jpeg">
+                        <label class="chooseFilelb" for="chooseFile">Choose a file</label>
+                    </div>
+                    <div class="item4">
+                        <!-- <input type="submit" value="Submit" class="btn2"> -->
+                        <button class="btn2" id="btn" type="submit" >Submit form</button>
+                    </div>
+                    <div class="item5"><input class="nameInput" type="text" id="nameInput" name="fname" placeholder="item name" required></div>
+                    <div class="item6">
+                        <select class="selectBox" id="Category" name="Category" required>
+                            <option value="" disabled selected>Choose your category</option>
+                            <option value="Waifu">Waifu</option>
+                            <option value="SuperWaifu">SuperWaifu</option>
+                            <option value="Wibu">Wibu</option>
+                            <option value="SuperWibu">SuperWibu</option>
+                        </select>
+                    </div>
+                    <div class="item7">
+                        <span>Image shown here</span>
+                        <img id="imgPreview" scr="" alt="Image Preview" width="120" height="50" style="vertical-align: middle;">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="d2">
+            <table id="myTable"> 
+                <tr>
+                    <th id="index"><b>#</b></th>
+                    <th id="name">Item Name</th>
+                    <th id="Cate">Category</th>
+                    <th id="imag" max-width = 200px max-height =130px>Image</th>
+                    <th id="act">Action</th>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+    <script src="Scrypt.js">
+        
+    </script>
+</body>
+</html>

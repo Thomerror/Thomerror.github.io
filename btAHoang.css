@@ -1,0 +1,77 @@
+.container{
+    margin:5px;
+    padding:10px;
+}
+.f{
+    padding: 20px;
+    padding-bottom:30px;
+    border: 1px solid black;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 230px 230px auto auto;
+    grid-gap: 0px;
+    padding: 0px;
+}
+  
+.grid > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    padding:0px;
+    font-size: 20px;
+}
+.btn1{
+    padding:4px;
+    border: 1px solid black;
+}
+input[type="file"]{
+    display:none;
+}
+.chooseFilelb{
+    background-color: rgb(224, 224, 224);
+    padding: 3px 7px;
+    border:1px solid black;
+    border-radius: 2px;
+}
+.btn2{
+    color: white;
+    background-color: rgb(87, 170, 248);
+    padding:6px 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+  
+.item1 {
+    grid-column: 1 ;
+}
+.nameInput{
+    padding:8px;
+    display:block;
+    border: 1px solid black;
+    border-radius:3px;
+    height: 20px;
+    width:200px;
+    font-size: 15px;
+}
+.selectBox{
+    border-radius:3px;
+    padding: 9px 11px;
+    width: 200px;
+}
+
+.d2{
+    margin-top: 25px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table th{
+    height:50px;
+    text-align: left;
+    border-bottom: 2px solid gray;
+}
+table td{
+    height: 50px;
+    border-bottom:1px solid rgb(189, 189, 189);
+}
