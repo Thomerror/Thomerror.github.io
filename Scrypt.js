@@ -15,20 +15,24 @@
 
 
     document.querySelector("#chooseFile").addEventListener("change",function (){
+
         const reader = new FileReader();
-        if(localStorage.length == 0){
-            reader.addEventListener("load", () =>{
-                localStorage.setItem("image0", reader.result);
-            }); 
-        }
-        else{
-            reader.addEventListener("load", () =>{
-                localStorage.setItem("image"+localStorage.length, reader.result);
-            });
-        }
-        // localStorage.setItem("image", reader.result);
-    
+        // if(localStorage.length == 0){
+        //     reader.addEventListener("load", () =>{
+        //         localStorage.setItem("image0", reader.result);
+        //     }); 
+        // }
+        // else{
+        //     reader.addEventListener("load", () =>{
+        //         localStorage.setItem("image"+localStorage.length, reader.result);
+        //     });
+        // }
+        reader.addEventListener("load", () =>{
+            localStorage.setItem("img"+localStorage.length,reader.result);
+        });
+        
         reader.readAsDataURL(this.files[0]);
+    });
     
         document.addEventListener("DOMContentLoaded", () =>{
             const recentImgDataUrl = localStorage.getItem("image"+localStorage.length-1);
@@ -37,7 +41,6 @@
                 document.querySelector("#imgPreview").setAttribute("src", recentImgDataUrl);
             }
         });
-    });
 
 
 function checkNameInput(){
@@ -53,7 +56,9 @@ function checkNameInput(){
     }
     return;
 }
-
+function ValidateForm(){
+    checkNameInput();
+}
 function addData(){
     let table = document.getElementById("myTable");
     let row = table.insertRow(table.rows.length);
@@ -71,7 +76,5 @@ function addData(){
 let btn = document.getElementById("btn");
 // if(document.getElementById("nameInput").value != "" && document.getElementById("Category").value != ""){
 //     btn.addEventListener("click",addData);
-// }
-btn.addEventListener("click",checkNameInput);
+// // }
 btn.addEventListener("click",addData);
-btn.addEventListener("click",saveToLocal);
