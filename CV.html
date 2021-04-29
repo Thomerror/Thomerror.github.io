@@ -6,34 +6,95 @@
     <meta name="viewport" content="width = device - width, initial-scale = 1.0">
     <title>Curriculumn Vitae</title>
     <link rel="stylesheet" href="./CV.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 <body>
     <header>
-        <h2 class="logo">Logo</h2>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-            </ul>
-        </nav>
-        <label for="nav-toggle" class="nav-toggle-label">
-            <span></span>
-        </label>
+        <div class="nav-bar" id="myTopnav">
+            <nav>
+                <a href="#"><img class="logo" src="./maha.png" alt="logo"></a>
+                <ul class="nav-bar-ul">
+                    <li class="nav-bar-li"><a href="#section1" class="nav-bar-link1">Home</a></li>
+                    <li class="nav-bar-li"><a href="#section2" class="nav-bar-link2">About</a></li>
+                    <li class="nav-bar-li"><a href="#section3" class="nav-bar-link3">Skills</a></li>
+                    <li class="nav-bar-li"><a href="#" class="nav-bar-link">Experiences</a></li>
+                    <li class="nav-bar-li"><a href="#" class="nav-bar-link4">Portfolio</a></li>
+                    <li class="nav-bar-li"><a href="#" class="nav-bar-link">Pricing</a></li>
+                    <li class="nav-bar-li"><a href="#" class="nav-bar-link">Blog</a></li>
+                    <li class="nav-bar-li"><a href="#" class="nav-bar-link">Contact</a></li>
+                </ul>
+            </nav>
+            <label for="nav-mobile-input" class="nav-bar-btn">
+                <svg  aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+            </label>
+            <input type="checkbox" hidden name="" id="nav-mobile-input" class="nav_input">
+            <label for="nav-mobile-input" class="over_lay"></label>
+            <nav class="nav-mobile">
+                <ul class="nav_mobile_list">
+                    <li><a href="#section1" class="nav_mobile_link1">Home</a></li>
+                    <li><a href="#section2" class="nav_mobile_link2">About</a></li>
+                    <li><a href="#section3" class="nav_mobile_link3">Skills</a></li>
+                    <li><a href="#" class="nav_mobile_link">Experiences</a></li>
+                    <li><a href="#" class="nav_mobile_link4">Portfolio</a></li>
+                    <li><a href="#" class="nav_mobile_link">Pricing</a></li>
+                    <li><a href="#" class="nav_mobile_link">Blog</a></li>
+                    <li><a href="#" class="nav_mobile_link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
-    <section class="container">
+    <div class="side-bar">
+        <div class="side-bar-content">
+            <span>Style One</span>
+            <div class="style-One">
+                <div class="style-One1"><img class="side-bar-img" src="./h1w.png"></div>
+                <div class="style-One1"><img class="side-bar-img" src="./h1.png"></div>
+            </div>
+            <span>Style Two</span>
+            <div class="style-One">
+                <div class="style-One1"><img class="side-bar-img" src="./h1w.png"></div>
+                <div class="style-One1"><img class="side-bar-img" src="./h1.png"></div>
+            </div>
+            <span>Style RTl</span>
+            <div class="style-One">
+                <div class="style-One1"><img class="side-bar-img" src="./h1w.png"></div>
+                <div class="style-One1"><img class="side-bar-img" src="./h1.png"></div>
+            </div>
+            <div class="border">Colors:</div>
+            <div class="color-box">
+                <span class="color color1"></span>
+                <span class="color color2"></span>
+                <span class="color color3"></span>
+                <span class="color color4"></span>
+                <span class="color color5"></span>
+                <span class="color color6"></span>
+                <span class="color color7"></span>
+                <span class="color color8"></span>
+            </div>
+        </div>
+        <div class="input">
+            <input type="checkbox" hidden name="" id="side-bar-input" class="side-bar-input">
+            <label for="side-bar-input" class="side-bar-label"><i class="far fa-snowflake"></i></label>
+        </div>
+    </div>
+    <section class="container-home fade-in" id="section1">
         <div class = "box-1">
-            <span class="button">Hello I'm</span>
+            <span class="button fade-in">Hello I'm</span>
             <h1>
                 Tuấn Hùng 
             </h1>
-            <h2 class = "gray"> Web Developer </h2>
-            <h2 class = "space">Email: tuannguyen.300501@gmail.com <br />
-                 +83 703 159 526 <br /> 457 Lê Duẩn, Đà Nẵng, Việt Nam</h2>
+            <h2 class = "gray fade-in"> Web Developer </h2>
+            <h2 class = "space fade-in"><i class="fas fa-envelope"></i>Email: tuannguyen.300501@gmail.com <br />
+                <i class="fas fa-phone-alt"></i>+83 703 159 526 <br />
+                <i class="fas fa-map-marker-alt"></i>457 Lê Duẩn, Đà Nẵng, Việt Nam
+            </h2>
+            <ul class="social-icon fade-in">
+                <li class="social-icon-li"><a><i class="fab fa-facebook-f"></i></a></li>
+                <li class="social-icon-li"><a><i class="fab fa-twitter"></i></a></li>
+                <li class="social-icon-li"><a><i class="fab fa-instagram"></i></a></li>
+                <li class="social-icon-li"><a><i class="fab fa-github"></i></a></li>
+            </ul>
         </div>
-
 
         <div class = "box-2">
             <div class="outter-circle"></div>
@@ -43,9 +104,9 @@
     
     </section>
     
-    <section class = "container">
+    <section class = "container-about fade-in" id="section2">
         <div class="box-3">
-            <img src="./section2.png" width="550px" height="350px;">
+            <img src="./lisa-horizontal.jpg" width="100%" height="95%;">
         </div>
         <div class="box-4">
             <h2 class="sec2-box4-h2">
@@ -88,5 +149,542 @@
         </div>
     </section>
 
+    <section class="container-skill fade-in" id="section3">
+        <div class="box-5">
+            <h2 class="sec3-box5-h2">Technical Skills</h2>
+            <li>
+                <h3>Javascript<h3 class="h3-space">90%</h3></h3> <span class="sec3-box5-span1"><span class="javascript"></span></span>
+            </li>
+            <li>
+                <h3>Jav<h3 class="h3-space">78%</h3></h3> <span class="sec3-box5-span1"><span class="java"></span></span>
+            </li>
+            <li>
+                <h3>Python<h3 class="h3-space">47%</h3></h3> <span class="sec3-box5-span1"><span class="python"></span></span>
+            </li>
+            <li>
+                <h3>PHP<h3 class="h3-space">55%</h3></h3> <span class="sec3-box5-span1"><span class="php"></span></span>
+            </li>
+            <li>
+                <h3>VueJS<h3 class="h3-space">83%</h3></h3> <span class="sec3-box5-span1"><span class="vue"></span></span>
+            </li>
+        </div>
+        <div class="box-6">
+            <h2 class="sec3-box6-h2">Professional Skills</h2>
+            
+            <ul class="box6-ul">
+                <li>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="70" cy = "70" r = "55"></circle>
+                            <circle class="xoco1" cx="70" cy = "70" r = "55"></circle>
+                        </svg>
+                        <p class="percent">45%</p>
+                        <p class="percent-text">Communication</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="70" cy = "70" r = "55"></circle>
+                            <circle class="xoco2" cx="70" cy = "70" r = "55"></circle>
+                        </svg>
+                        <p class="percent">53%</p>
+                        <p class="percent-text">Team Work</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="70" cy = "70" r = "55"></circle>
+                            <circle class="xoco" cx="70" cy = "70" r = "55"></circle>
+                        </svg>
+                        <p class="percent">25%</p>
+                        <p class="percent-text">Product Management</p>
+                    </div> 
+                </li>
+                <li>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="70" cy = "70" r = "55"></circle>
+                            <circle class="xoco3" cx="70" cy = "70" r = "55"></circle>
+                        </svg>
+                        <p class="percent">64%</p>
+                        <p class="percent-text">Creativity</p>
+                    </div>
+                </li>
+            </ul>
+            
+        </div>
+    </section>
+    <section class="container-portfolio fade-in" id="section4">
+        <h2>Recent Portfolio</h2>
+        <div class="port-list-container">
+            <ul class="port-list">
+                <li>All Categories</li>
+                <li>Web Design</li>
+                <li>Branding</li>
+                <li>Mockups</li>
+                <li>Photography</li>
+            </ul>
+        </div>
+        <div class="portfolio">
+            <div class="portfolio-item square1 one">
+                <input type="checkbox" hidden id="portfolio-input1" class="portfolio-input">
+                <label for="portfolio-input1" class="portfolio-label">OneLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.</label>
+                <label for="portfolio-input1" class="over_lay"></label>
+                <div for="portfolio-input1" class="new-screen">
+                    <div class="new-screen-layout">
+                        <div class="text">
+                            <h2>Waifu - a life long love</h2>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris ligula, convallis eu massa eget, efficitur pretium est. Morbi efficitur finibus viverra. In ante mauris, convallis non libero quis, tristique vehicula diam. Donec vestibulum sit amet nisl nec tempus. Morbi auctor sit amet elit a ultricies. Nam commodo velit et felis porttitor, nec posuere tortor accumsan. Nam lobortis velit mauris, ac porta mi malesuada vel.<br />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris ligula, convallis eu massa eget, efficitur pretium est. Morbi efficitur finibus viverra. In ante mauris, convallis non libero quis, tristique vehicula diam. Donec vestibulum sit amet nisl nec tempus. Morbi auctor sit amet elit a ultricies. Nam commodo velit et felis porttitor, nec posuere tortor accumsan. Nam lobortis velit mauris, ac porta mi malesuada vel.
+                           <ul class="sec2-box4-ul">
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">C</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">C++</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">java</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">php</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">html</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">php</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">gg</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">Nodejs</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">javascript</span>
+                                </li>
+                            </ul>
+                            <button class="sec2-box4-button">Live Demo</button>
+                        </div>
+                        <div class="img-kawaii">
+                            <img src="./lisa-horizontal.jpg" class="kawaii">
+                            <div>LISA de thuong nhat tren qua dat nay, kaiwaiiii desukaaaaaaa!! UwU ÙwÚ</div>
+                            <img src="./touka-horizontal.png" class="kawaii">
+                            <div>Touka chan cung cuc ky de thuong kaiwaiiii desukaaaaaaa!! UwU ÙwÚ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item small1 two">
+                <input type="checkbox" hidden id="portfolio-input2" class="portfolio-input">
+                <label for="portfolio-input2" class="portfolio-label">OneLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.</label>
+                <label for="portfolio-input2" class="over_lay"></label>
+                <div for="portfolio-input1" class="new-screen">
+                    <div class="new-screen-layout">
+                        <div class="text">
+                            <h2>Waifu - a life long love</h2>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris ligula, convallis eu massa eget, efficitur pretium est. Morbi efficitur finibus viverra. In ante mauris, convallis non libero quis, tristique vehicula diam. Donec vestibulum sit amet nisl nec tempus. Morbi auctor sit amet elit a ultricies. Nam commodo velit et felis porttitor, nec posuere tortor accumsan. Nam lobortis velit mauris, ac porta mi malesuada vel.<br />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris ligula, convallis eu massa eget, efficitur pretium est. Morbi efficitur finibus viverra. In ante mauris, convallis non libero quis, tristique vehicula diam. Donec vestibulum sit amet nisl nec tempus. Morbi auctor sit amet elit a ultricies. Nam commodo velit et felis porttitor, nec posuere tortor accumsan. Nam lobortis velit mauris, ac porta mi malesuada vel.
+                           <ul class="sec2-box4-ul">
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">C</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">C++</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">java</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">php</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">html</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">php</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">gg</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">Nodejs</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">javascript</span>
+                                </li>
+                            </ul>
+                            <button class="sec2-box4-button">Live Demo</button>
+                        </div>
+                        <div class="img-kawaii">
+                            <img src="./lisa-horizontal.jpg" class="kawaii">
+                            <div>LISA de thuong nhat tren qua dat nay, kaiwaiiii desukaaaaaaa!! UwU ÙwÚ</div>
+                            <img src="./touka-horizontal.png" class="kawaii">
+                            <div>Touka chan cung cuc ky de thuong kaiwaiiii desukaaaaaaa!! UwU ÙwÚ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item square2 three">
+                <input type="checkbox" hidden id="portfolio-input1" class="portfolio-input">
+                <label for="portfolio-input1" class="portfolio-label">OneLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.</label>
+                <label for="portfolio-input1" class="over_lay"></label>
+                <div for="portfolio-input1" class="new-screen">
+                    <div class="new-screen-layout">
+                        <div class="text">
+                            <h2>Waifu - a life long love</h2>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris ligula, convallis eu massa eget, efficitur pretium est. Morbi efficitur finibus viverra. In ante mauris, convallis non libero quis, tristique vehicula diam. Donec vestibulum sit amet nisl nec tempus. Morbi auctor sit amet elit a ultricies. Nam commodo velit et felis porttitor, nec posuere tortor accumsan. Nam lobortis velit mauris, ac porta mi malesuada vel.<br />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris ligula, convallis eu massa eget, efficitur pretium est. Morbi efficitur finibus viverra. In ante mauris, convallis non libero quis, tristique vehicula diam. Donec vestibulum sit amet nisl nec tempus. Morbi auctor sit amet elit a ultricies. Nam commodo velit et felis porttitor, nec posuere tortor accumsan. Nam lobortis velit mauris, ac porta mi malesuada vel.
+                           <ul class="sec2-box4-ul">
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">C</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">C++</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">java</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">php</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">html</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">php</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">gg</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">Nodejs</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">javascript</span>
+                                </li>
+                            </ul>
+                            <button class="sec2-box4-button">Live Demo</button>
+                        </div>
+                        <div class="img-kawaii">
+                            <img src="./lisa-horizontal.jpg" class="kawaii">
+                            <div>LISA de thuong nhat tren qua dat nay, kaiwaiiii desukaaaaaaa!! UwU ÙwÚ</div>
+                            <img src="./touka-horizontal.png" class="kawaii">
+                            <div>Touka chan cung cuc ky de thuong kaiwaiiii desukaaaaaaa!! UwU ÙwÚ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item small2 four">
+                <input type="checkbox" hidden id="portfolio-input1" class="portfolio-input">
+                <label for="portfolio-input1" class="portfolio-label">OneLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.</label>
+                <label for="portfolio-input1" class="over_lay"></label>
+                <div for="portfolio-input1" class="new-screen">
+                    <div class="new-screen-layout">
+                        <div class="text">
+                            <h2>Waifu - a life long love</h2>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris ligula, convallis eu massa eget, efficitur pretium est. Morbi efficitur finibus viverra. In ante mauris, convallis non libero quis, tristique vehicula diam. Donec vestibulum sit amet nisl nec tempus. Morbi auctor sit amet elit a ultricies. Nam commodo velit et felis porttitor, nec posuere tortor accumsan. Nam lobortis velit mauris, ac porta mi malesuada vel.<br />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris ligula, convallis eu massa eget, efficitur pretium est. Morbi efficitur finibus viverra. In ante mauris, convallis non libero quis, tristique vehicula diam. Donec vestibulum sit amet nisl nec tempus. Morbi auctor sit amet elit a ultricies. Nam commodo velit et felis porttitor, nec posuere tortor accumsan. Nam lobortis velit mauris, ac porta mi malesuada vel.
+                           <ul class="sec2-box4-ul">
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">C</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">C++</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">java</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">php</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">html</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">php</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">gg</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">Nodejs</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">javascript</span>
+                                </li>
+                            </ul>
+                            <button class="sec2-box4-button">Live Demo</button>
+                        </div>
+                        <div class="img-kawaii">
+                            <img src="./lisa-horizontal.jpg" class="kawaii">
+                            <div>LISA de thuong nhat tren qua dat nay, kaiwaiiii desukaaaaaaa!! UwU ÙwÚ</div>
+                            <img src="./touka-horizontal.png" class="kawaii">
+                            <div>Touka chan cung cuc ky de thuong kaiwaiiii desukaaaaaaa!! UwU ÙwÚ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item small3 five">
+                <input type="checkbox" hidden id="portfolio-input1" class="portfolio-input">
+                <label for="portfolio-input1" class="portfolio-label">OneLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.</label>
+                <label for="portfolio-input1" class="over_lay"></label>
+                <div for="portfolio-input1" class="new-screen">
+                    <div class="new-screen-layout">
+                        <div class="text">
+                            <h2>Waifu - a life long love</h2>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris ligula, convallis eu massa eget, efficitur pretium est. Morbi efficitur finibus viverra. In ante mauris, convallis non libero quis, tristique vehicula diam. Donec vestibulum sit amet nisl nec tempus. Morbi auctor sit amet elit a ultricies. Nam commodo velit et felis porttitor, nec posuere tortor accumsan. Nam lobortis velit mauris, ac porta mi malesuada vel.<br />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris ligula, convallis eu massa eget, efficitur pretium est. Morbi efficitur finibus viverra. In ante mauris, convallis non libero quis, tristique vehicula diam. Donec vestibulum sit amet nisl nec tempus. Morbi auctor sit amet elit a ultricies. Nam commodo velit et felis porttitor, nec posuere tortor accumsan. Nam lobortis velit mauris, ac porta mi malesuada vel.
+                           <ul class="sec2-box4-ul">
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">C</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">C++</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">java</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">php</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">html</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">php</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">gg</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">Nodejs</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">javascript</span>
+                                </li>
+                            </ul>
+                            <button class="sec2-box4-button">Live Demo</button>
+                        </div>
+                        <div class="img-kawaii">
+                            <img src="./lisa-horizontal.jpg" class="kawaii">
+                            <div>LISA de thuong nhat tren qua dat nay, kaiwaiiii desukaaaaaaa!! UwU ÙwÚ</div>
+                            <img src="./touka-horizontal.png" class="kawaii">
+                            <div>Touka chan cung cuc ky de thuong kaiwaiiii desukaaaaaaa!! UwU ÙwÚ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item small4 six">
+                <input type="checkbox" hidden id="portfolio-input1" class="portfolio-input">
+                <label for="portfolio-input1" class="portfolio-label">OneLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.</label>
+                <label for="portfolio-input1" class="over_lay"></label>
+                <div for="portfolio-input1" class="new-screen">
+                    <div class="new-screen-layout">
+                        <div class="text">
+                            <h2>Waifu - a life long love</h2>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris ligula, convallis eu massa eget, efficitur pretium est. Morbi efficitur finibus viverra. In ante mauris, convallis non libero quis, tristique vehicula diam. Donec vestibulum sit amet nisl nec tempus. Morbi auctor sit amet elit a ultricies. Nam commodo velit et felis porttitor, nec posuere tortor accumsan. Nam lobortis velit mauris, ac porta mi malesuada vel.<br />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris ligula, convallis eu massa eget, efficitur pretium est. Morbi efficitur finibus viverra. In ante mauris, convallis non libero quis, tristique vehicula diam. Donec vestibulum sit amet nisl nec tempus. Morbi auctor sit amet elit a ultricies. Nam commodo velit et felis porttitor, nec posuere tortor accumsan. Nam lobortis velit mauris, ac porta mi malesuada vel.
+                           <ul class="sec2-box4-ul">
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">C</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">C++</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">java</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">php</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">html</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">php</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">gg</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">Nodejs</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">javascript</span>
+                                </li>
+                            </ul>
+                            <button class="sec2-box4-button">Live Demo</button>
+                        </div>
+                        <div class="img-kawaii">
+                            <img src="./lisa-horizontal.jpg" class="kawaii">
+                            <div>LISA de thuong nhat tren qua dat nay, kaiwaiiii desukaaaaaaa!! UwU ÙwÚ</div>
+                            <img src="./touka-horizontal.png" class="kawaii">
+                            <div>Touka chan cung cuc ky de thuong kaiwaiiii desukaaaaaaa!! UwU ÙwÚ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item small5 seven">
+                <input type="checkbox" hidden id="portfolio-input1" class="portfolio-input">
+                <label for="portfolio-input1" class="portfolio-label">OneLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.</label>
+                <label for="portfolio-input1" class="over_lay"></label>
+                <div for="portfolio-input1" class="new-screen">
+                    <div class="new-screen-layout">
+                        <div class="text">
+                            <h2>Waifu - a life long love</h2>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris ligula, convallis eu massa eget, efficitur pretium est. Morbi efficitur finibus viverra. In ante mauris, convallis non libero quis, tristique vehicula diam. Donec vestibulum sit amet nisl nec tempus. Morbi auctor sit amet elit a ultricies. Nam commodo velit et felis porttitor, nec posuere tortor accumsan. Nam lobortis velit mauris, ac porta mi malesuada vel.<br />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris ligula, convallis eu massa eget, efficitur pretium est. Morbi efficitur finibus viverra. In ante mauris, convallis non libero quis, tristique vehicula diam. Donec vestibulum sit amet nisl nec tempus. Morbi auctor sit amet elit a ultricies. Nam commodo velit et felis porttitor, nec posuere tortor accumsan. Nam lobortis velit mauris, ac porta mi malesuada vel.
+                           <ul class="sec2-box4-ul">
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">C</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">C++</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">java</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">php</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">html</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">php</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">gg</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">Nodejs</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">javascript</span>
+                                </li>
+                            </ul>
+                            <button class="sec2-box4-button">Live Demo</button>
+                        </div>
+                        <div class="img-kawaii">
+                            <img src="./lisa-horizontal.jpg" class="kawaii">
+                            <div>LISA de thuong nhat tren qua dat nay, kaiwaiiii desukaaaaaaa!! UwU ÙwÚ</div>
+                            <img src="./touka-horizontal.png" class="kawaii">
+                            <div>Touka chan cung cuc ky de thuong kaiwaiiii desukaaaaaaa!! UwU ÙwÚ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item square3 eight">
+                <input type="checkbox" hidden id="portfolio-input1" class="portfolio-input">
+                <label for="portfolio-input1" class="portfolio-label">OneLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.</label>
+                <label for="portfolio-input1" class="over_lay"></label>
+                <div for="portfolio-input1" class="new-screen">
+                    <div class="new-screen-layout">
+                        <div class="text">
+                            <h2>Waifu - a life long love</h2>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris ligula, convallis eu massa eget, efficitur pretium est. Morbi efficitur finibus viverra. In ante mauris, convallis non libero quis, tristique vehicula diam. Donec vestibulum sit amet nisl nec tempus. Morbi auctor sit amet elit a ultricies. Nam commodo velit et felis porttitor, nec posuere tortor accumsan. Nam lobortis velit mauris, ac porta mi malesuada vel.<br />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris ligula, convallis eu massa eget, efficitur pretium est. Morbi efficitur finibus viverra. In ante mauris, convallis non libero quis, tristique vehicula diam. Donec vestibulum sit amet nisl nec tempus. Morbi auctor sit amet elit a ultricies. Nam commodo velit et felis porttitor, nec posuere tortor accumsan. Nam lobortis velit mauris, ac porta mi malesuada vel.
+                           <ul class="sec2-box4-ul">
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">C</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">C++</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">java</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">php</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">html</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">php</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">gg</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">Nodejs</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">javascript</span>
+                                </li>
+                            </ul>
+                            <button class="sec2-box4-button">Live Demo</button>
+                        </div>
+                        <div class="img-kawaii">
+                            <img src="./lisa-horizontal.jpg" class="kawaii">
+                            <div>LISA de thuong nhat tren qua dat nay, kaiwaiiii desukaaaaaaa!! UwU ÙwÚ</div>
+                            <img src="./touka-horizontal.png" class="kawaii">
+                            <div>Touka chan cung cuc ky de thuong kaiwaiiii desukaaaaaaa!! UwU ÙwÚ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item small6 nine">
+                <input type="checkbox" hidden id="portfolio-input1" class="portfolio-input">
+                <label for="portfolio-input1" class="portfolio-label">OneLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis id elit id mollis. Pellentesque dignissim nisl id viverra posuere. Praesent sit amet sapien felis.</label>
+                <label for="portfolio-input1" class="over_lay"></label>
+                <div for="portfolio-input1" class="new-screen">
+                    <div class="new-screen-layout">
+                        <div class="text">
+                            <h2>Waifu - a life long love</h2>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris ligula, convallis eu massa eget, efficitur pretium est. Morbi efficitur finibus viverra. In ante mauris, convallis non libero quis, tristique vehicula diam. Donec vestibulum sit amet nisl nec tempus. Morbi auctor sit amet elit a ultricies. Nam commodo velit et felis porttitor, nec posuere tortor accumsan. Nam lobortis velit mauris, ac porta mi malesuada vel.<br />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris ligula, convallis eu massa eget, efficitur pretium est. Morbi efficitur finibus viverra. In ante mauris, convallis non libero quis, tristique vehicula diam. Donec vestibulum sit amet nisl nec tempus. Morbi auctor sit amet elit a ultricies. Nam commodo velit et felis porttitor, nec posuere tortor accumsan. Nam lobortis velit mauris, ac porta mi malesuada vel.
+                           <ul class="sec2-box4-ul">
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">C</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">C++</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">java</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">php</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">html</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">php</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">gg</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">Nodejs</span>
+                                </li>
+                                <li class="sec2-box4-li">
+                                    <span class="sec2-box4-ul-li-span">javascript</span>
+                                </li>
+                            </ul>
+                            <button class="sec2-box4-button">Live Demo</button>
+                        </div>
+                        <div class="img-kawaii">
+                            <img src="./lisa-horizontal.jpg" class="kawaii">
+                            <div>LISA de thuong nhat tren qua dat nay, kaiwaiiii desukaaaaaaa!! UwU ÙwÚ</div>
+                            <img src="./touka-horizontal.png" class="kawaii">
+                            <div>Touka chan cung cuc ky de thuong kaiwaiiii desukaaaaaaa!! UwU ÙwÚ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./Script.js"></script>
+    </script>
 </body>
 </html>
+<!-- Tablet: width >= 740px(46.25em) and width <= 1024px(63.9375)-->
+<!-- mobile: width < 740px (46.1875em)-->
+<!-- 16px = 1em -->
